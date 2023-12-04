@@ -3,6 +3,7 @@
 namespace Spatie\MailcoachPulse\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Livewire\LivewireServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 use Spatie\MailcoachPulse\MailcoachPulseServiceProvider;
 
@@ -21,6 +22,7 @@ class TestCase extends Orchestra
     {
         return [
             MailcoachPulseServiceProvider::class,
+            LivewireServiceProvider::class,
         ];
     }
 
