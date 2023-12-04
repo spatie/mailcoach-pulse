@@ -12,8 +12,8 @@ use Spatie\MailcoachSdk\Resources\EmailList;
 #[Lazy]
 class MailcoachListPulseCardComponent extends Card
 {
-    use UsesMailcoach;
     use RemembersApiCalls;
+    use UsesMailcoach;
 
     public string $emailListUuid;
 
@@ -36,7 +36,7 @@ class MailcoachListPulseCardComponent extends Card
         }
 
         $emailListProperties = $this->remember(
-            fn() => $mailcoach->emailList($this->emailListUuid)->toArray(),
+            fn () => $mailcoach->emailList($this->emailListUuid)->toArray(),
             "emailList:{$this->emailListUuid}",
             CarbonInterval::minute(),
         );

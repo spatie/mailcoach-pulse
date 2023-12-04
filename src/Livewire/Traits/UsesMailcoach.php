@@ -7,7 +7,7 @@ use Spatie\MailcoachSdk\Mailcoach;
 
 trait UsesMailcoach
 {
-    public function mailcoach(): Mailcoach|null
+    public function mailcoach(): ?Mailcoach
     {
         if (! MailcoachPulse::isConfigured()) {
             return null;

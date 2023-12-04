@@ -13,9 +13,9 @@ trait RemembersApiCalls
         $interval ??= CarbonInterval::seconds(5);
 
         return App::make(CacheStoreResolver::class)->store()->remember(
-            'laravel:pulse:' . static::class . ':' . $key,
+            'laravel:pulse:'.static::class.':'.$key,
             $interval,
-            fn() => $apiCall(),
+            fn () => $apiCall(),
         );
     }
 }

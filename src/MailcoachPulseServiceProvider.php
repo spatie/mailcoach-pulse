@@ -24,7 +24,7 @@ class MailcoachPulseServiceProvider extends PackageServiceProvider
 
         Livewire::component('mailcoach.pulse', MailcoachListPulseCardComponent::class);
 
-        $this->app->bind('mailcoach-pulse', function() {
+        $this->app->bind('mailcoach-pulse', function () {
             if (! MailcoachPulse::isConfigured()) {
                 return null;
             }
