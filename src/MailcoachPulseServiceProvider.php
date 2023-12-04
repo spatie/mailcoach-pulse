@@ -5,7 +5,6 @@ namespace Spatie\MailcoachPulse;
 use Livewire\Livewire;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spatie\MailcoachPulse\Commands\MailcoachPulseCommand;
 use Spatie\MailcoachPulse\Livewire\MailcoachPulseCardComponent;
 
 class MailcoachPulseServiceProvider extends PackageServiceProvider
