@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Spatie\MailcoachPulse\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class MailcoachPulseCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'mailcoach-pulse';
 
     public $description = 'My command';
 
